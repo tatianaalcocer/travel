@@ -30,8 +30,11 @@ describe('GET /api/events', function() {
         expect(responseBody[0])
           .to.be.an('object')
           .to.have.key('name')
+<<<<<<< HEAD
 
           done();
+=======
+>>>>>>> 13f3c919e899dc728e861044007e350f2a008bb2
     })
     });
 });
