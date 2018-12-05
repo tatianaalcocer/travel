@@ -30,6 +30,8 @@ describe('GET /api/events', function() {
         expect(responseBody[0])
           .to.be.an('object')
           .to.have.key('name')
+
+          done();
     })
     });
 });
