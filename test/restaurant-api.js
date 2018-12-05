@@ -40,6 +40,10 @@ describe('GET /api/examples', function () {
         .to.be.an('object')
         .to.have.key('name')
 
+
+        done();
+
+
     });
 
   });
