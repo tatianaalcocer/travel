@@ -13,11 +13,11 @@ app.use(express.static("public"));
 // mongoose.connect('mongodb://localhost/twitter', { useNewUrlParser: true });
 
 
-require('../routes/concert-api-routes')(app);
-require('../routes/hotel-api-routes')(app);
-require('../routes/restaurant-api-routes')(app);
-require('../routes/site-api-routes')(app);
-require('../routes/html-routes')(app);
+require('./routes/concert-api-routes')(app);
+require('./routes/hotel-api-routes')(app);
+require('./routes/restaurant-api-routes')(app);
+require('./routes/site-api-routes')(app);
+require('./routes/html-routes')(app);
 
 
 app.listen(PORT, function() {
