@@ -1,23 +1,24 @@
-module.exports = function (app) {
+'use strict';
+require('dotenv').config()
 
-
-    module.exports = function (app) {
-
-        'use strict';
-     
         const yelp = require('yelp-fusion');
          
-        const client = yelp.client(process.env.YELP_API);
-         
-        client.search({
-          term:'Four Barrel Coffee',
-          location: 'san francisco, ca'
-        }).then(response => {
-          console.log(response.jsonBody.businesses[0].name);
-        }).catch(e => {
-          console.log(e);
-        });
+        const client = yelp.client(`${process.env.YELP_API}`);
+        
+         module.exports = function (app) {
+
+        
+        app.get('/api/restaurant/:location', function (req, res) {
+
+            client.search({ 
+            term:'food',
+            location: req.params.location
+            }).then(response => {
+            console.log(response.jsonBody.businesses);
+            }).catch(e => {
+            console.log(e);
+            });
     
+    });
     
-    }
 }
