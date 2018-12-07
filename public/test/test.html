@@ -14,16 +14,16 @@
 
 <body>
   <div id="app">
-      <form>
-          <input id="location" />
-          <button id="submit">Search</button>
-        </form>
-        <div id="results">
-            <div id="restaurant"></div>
-            <div id="hotel"></div>
-            <div id="concert"></div>
-            <div id="sites"></div>
-        </div>
+    <form>
+      <input id="location" />
+      <button id="submit">Search</button>
+    </form>
+    <div id="results">
+      <div id="restaurant"></div>
+      <div id="hotel"></div>
+      <div id="concert"></div>
+      <div id="sites"></div>
+    </div>
   </div>
   <div id="mocha">
     <p><a href=".">Index</a></p>
@@ -35,7 +35,7 @@
   <script src="../app.js"></script>
   <script src="../restaurant.js"></script>
   <script src="../hotel.js"></script>
-  <script src="../site.js"></script>
+  <script src="./sites.js"></script>
   <script src="../concert.js"></script>
   <script>
     mocha.ui('bdd');
@@ -43,6 +43,7 @@
     const expect = chai.expect;
   </script> 
   <script src="test.js"></script>
+  <script src="./sites-test.js"></script>
   <script>mocha.run();</script>
 
 
