@@ -14,9 +14,9 @@ require('dotenv').config()
             term:'food',
             location: req.params.location
             }).then(response => {
-            console.log(response.jsonBody.businesses);
+            res.json(response.jsonBody.businesses);
             }).catch(e => {
-            console.log(e);
+            res.json(e);
             });
     
     });
