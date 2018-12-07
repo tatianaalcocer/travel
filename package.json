@@ -1,7 +1,7 @@
 {
   "name": "post-test",
   "version": "1.0.0",
-  "description": "",
+  "description": "This is a test.",
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
@@ -22,5 +22,17 @@
     "mysql2": "^1.3.6",
     "sequelize": "^4.3.1",
     "yelp-fusion": "^2.2.1"
-  }
+  },
+  "directories": {
+    "test": "test"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tatianaalcocer/travel.git"
+  },
+  "bugs": {
+    "url": "https://github.com/tatianaalcocer/travel/issues"
+  },
+  "homepage": "https://github.com/tatianaalcocer/travel#readme"
 }
