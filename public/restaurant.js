@@ -4,10 +4,10 @@ const getRestaurantList = function(e){
     $.get(`api/restaurant/${$('#location').val()}`)
     .then( function(data){
       for (let i = 0; i < 10; i++){
-        $('#restaurant').append(`<div class="response">${data[i].name}<div>`)
+        $('#restaurant').append(` <a target="_blank" href="${data[i].url}"<div class="response">${data[i].name}</a><div>`)
       }
     }
     )
   }
-  
+
   $('#submit').on('click', getRestaurantList);
