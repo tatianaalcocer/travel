@@ -10,4 +10,16 @@ const getSiteList = function (e) {
         })
 }
 
+const showMoreSites = function (e) {
+    e.preventDefault();
+    $.get(`api/sites/${$('#location').val()}`)
+        .then(function (data) {
+            for (let i = 11; i < 21; i++) {
+                $('#sites').append(`<div class="response">${data[i].name}<div>`)
+                $('#sites').append(`<div class="response-address">${data[i].formatted_address}<div>`)
+            }
+        })
+}
+
 $('#submit').on('click', getSiteList);
+$('#btn-showMore').on('click', showMoreSites);
