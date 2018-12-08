@@ -11,3 +11,19 @@ const getRestaurantList = function(e){
   }
 
   $('#submit').on('click', getRestaurantList);
+
+
+
+  const showMore = function(e){
+    e.preventDefault();
+
+    $.get(`api/restaurant/${$('#location').val()}`)
+    .then( function(data){
+      for (let i = 11; i < 21; i++){
+        $('#restaurant').append(` <a target="_blank" href="${data[i].url}"<div class="response">${data[i].name}</a><div>`)
+      }
+    }
+    )
+  }
+
+  $('#btn-showMore').on('click', showMore);
