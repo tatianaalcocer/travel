@@ -1,3 +1,4 @@
+let showMoreCount = 0;
 const getRestaurantList = function(e){
     e.preventDefault();
     $('#restaurant').empty();
@@ -16,10 +17,11 @@ const getRestaurantList = function(e){
 
   const showMore = function(e){
     e.preventDefault();
-
+    showMoreCount++
     $.get(`api/restaurant/${$('#location').val()}`)
     .then( function(data){
-      for (let i = 11; i < 21; i++){
+        for (let i = showMoreCount * 10 + 1; i < showMoreCount * 10 + 11; i++) {
+     
         $('#restaurant').append(` <a target="_blank" href="${data[i].url}"<div class="response">${data[i].name}</a><div>`)
       }
     }
@@ -27,3 +29,9 @@ const getRestaurantList = function(e){
   }
 
   $('#btn-showMore').on('click', showMore);
+
+
+//   showMore = function() {
+//       showMoreCount++;
+//       for (i = (showMoreCount * 10) + 1; i < (showMoreCount * 10) + 1; i++
+//   }
