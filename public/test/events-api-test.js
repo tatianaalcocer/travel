@@ -3,7 +3,7 @@ describe('renders to the page', function (){
         $("#concert").empty();
     });
 
-    it('render to events to the page', function (){
+    it('render events to the page', function (){
         $('#location').val('atlanta');
         $('#submit').trigger('click');
         expect($('.response').length).to.equal(10);
