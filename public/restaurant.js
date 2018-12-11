@@ -2,6 +2,7 @@
 const getRestaurantList = function(e){
     e.preventDefault();
     $('#restaurant').empty();
+    $('#restaurant').append(`<div class="search-topic">Restaurant<div>`)
     $.get(`api/restaurant/${$('#location').val()}`)
     .then( function(data){
       for (let i = 0; i < 10; i++){

@@ -94,9 +94,9 @@ footer {
   text-align: center;
 }
 
-#results {
+/*#results {
   display: none;
-}
+}*/
 /*------------------------
     More Styles
 --------------------------*/
@@ -152,7 +152,7 @@ footer {
 	width: 450px;
 }
 
-.form-wrapper #search{
+.form-wrapper #location{
 	border: 1px solid #CCC;
 	-webkit-box-shadow: 0 1px 1px #ddd inset, 0 1px 0 #FFF;
 	-moz-box-shadow: 0 1px 1px #ddd inset, 0 1px 0 #FFF;
@@ -168,7 +168,7 @@ footer {
 	width: 320px;
 }
 
-.form-wrapper #search:focus {
+.form-wrapper #location:focus {
 	border-color: #aaa;
 	-webkit-box-shadow: 0 1px 1px #bbb inset;
 	-moz-box-shadow: 0 1px 1px #bbb inset;
@@ -176,9 +176,9 @@ footer {
 	outline: 0;
 }
 
-.form-wrapper #search:-moz-placeholder,
-.form-wrapper #search:-ms-input-placeholder,
-.form-wrapper #search::-webkit-input-placeholder {
+.form-wrapper #location:-moz-placeholder,
+.form-wrapper #location:-ms-input-placeholder,
+.form-wrapper #location::-webkit-input-placeholder {
 	color: #999;
 	font-weight: normal;
 }

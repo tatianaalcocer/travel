@@ -22,7 +22,7 @@
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga perferendis qui nam modi quo eligendi repellat
       laudantium quos beatae laborum, expedita aperiam nihil voluptatem doloremque cum quidem ipsam hic inventore.</p>
     <form class="form-wrapper">
-      <input type="text" id="search" placeholder="Search for..." required>
+      <input type="text" id="location" placeholder="Search for..." required>
       <input type="submit" value="go" id="submit">
     </form>
     <div class="box">
@@ -33,50 +33,32 @@
     <div class="box">
       <h3>Restaurants</h3>
       <img src="images/dish.svg" />
-      <p>Restaurants from fine dinings to diners on Yelp</p>
+      <p>Restaurants from fine dining to diners on Yelp</p>
     </div>
     <div class="box">
       <h3>Sites</h3>
       <img src="images/museum.svg" />
       <p>Find museums, monuments, and more from Google</p>
     </div>
-
   </main>
 
-  <main id="results">
-   <!--  <form>
-      <input id="location" />
-      <button id="submit">Search</button>
-    </form> -->
+  <main id="results">   
+      <form class="form-wrapper more on">
+        <input type="submit" value="more" id="btn-showMore more">
+      </form>
 
-    <!-- <div class="result-box" id="event">
-      <h2>Events</h2>
-    </div>
-    <div class="result-box" id="restaurant">
-      <h2>Restaurants</h2>
-    </div>
-    <div class="result-box" id="site">
-      <h2>Sites</h2>
-    </div> -->
-
-    <div id="results">
       <div class="result-section result-box" id="event"></div>
       <div class="result-section result-box" id="restaurant"></div>
-      <div class="result-section result-box" id="sites site"></div>
-    </div>
-
-    
-    <form class="form-wrapper more on">
-      <input type="submit" value="more" id="btn-showMore more">
-    </form>
-
+      <div class="result-section result-box" id="sites"></div>
   </main>
+
+  <footer>Photo by Ross Parmly on Unsplash</footer>
 
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
     crossorigin="anonymous"></script>
   <script src="app.js"></script>
-  <script src="restaurant.js"></script>
   <script src="site.js"></script>
+  <script src="restaurant.js"></script>
   <script src="concert.js"></script>
 </body>
 
