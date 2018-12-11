@@ -101,7 +101,7 @@ footer {
     More Styles
 --------------------------*/
 
-#more {
+#btn-showMore {
   position: absolute;
   top: 10px;
   right: 10px;
@@ -183,7 +183,7 @@ footer {
 	font-weight: normal;
 }
 
-.form-wrapper #submit, .form-wrapper #more {
+.form-wrapper #submit, .form-wrapper #btn-showMore {
 	background-color: #6668FF;
 	background-image: -webkit-gradient(linear, left top, left bottom, from(#6668FF), to(rgb(63, 65, 156)));
 	background-image: -webkit-linear-gradient(top, #6668FF, rgb(63, 65, 156));
@@ -206,7 +206,7 @@ footer {
 	width: 100px;
 }
 
-.form-wrapper #more {
+.form-wrapper #btn-showMore {
 	background-color: rgb(141, 143, 245);
 	background-image: -webkit-gradient(linear, left top, left bottom, from(rgb(141, 143, 245)), to(rgb(85, 86, 156)));
 	background-image: -webkit-linear-gradient(top, rgb(141, 143, 245),rgb(85, 86, 156));
@@ -234,8 +234,8 @@ footer {
 	background-image: linear-gradient(top, rgb(63, 65, 156), #6668FF);
 }
 
-.form-wrapper #more:hover,
-.form-wrapper #more:focus {
+.form-wrapper #btn-showMore:hover,
+.form-wrapper #btn-showMore:focus {
 	background-color: rgb(141, 143, 245);
 	background-image: -webkit-gradient(linear, left top, left bottom, from(rgb(85, 86, 156)), to(rgb(141, 143, 245)));
 	background-image: -webkit-linear-gradient(top, rgb(85, 86, 156), rgb(141, 143, 245));
@@ -246,7 +246,7 @@ footer {
 }
 
 .form-wrapper #submit:active,
-.form-wrapper #more:active {
+.form-wrapper #btn-showMore:active {
 	-webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5) inset;
 	-moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5) inset;
 	box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5) inset;
@@ -254,6 +254,6 @@ footer {
 }
 
 .form-wrapper #submit::-moz-focus-inner,
-.form-wrapper #more::-moz-focus-inner {
+.form-wrapper #btn-showMore::-moz-focus-inner {
 	border: 0;
 }
