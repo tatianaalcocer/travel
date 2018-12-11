@@ -22,7 +22,6 @@
 
 body {
   font-family: 'Raleway', sans-serif;
-  
   color: white;
   padding: 10px;
   line-height: 1.5;
@@ -90,9 +89,30 @@ footer {
   padding: 5px 10px;
 }
 
+.result-box::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
 .result-box h2 {
   text-align: center;
 }
+
+.response-address {
+  border-bottom: 1px dotted gray;
+}
+
+.result-box .response {
+  border-top: : 1px dotted gray;
+}
+
+.search-topic {
+  border-bottom: 1px solid gray;
+  padding-bottom: 10px;
+  color: #4F4F51;
+}
+
 
 /*#results {
   display: none;

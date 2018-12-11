@@ -2,7 +2,7 @@
 const getEventList = function(e){
     e.preventDefault();
     $('#event').empty();
-    $('#event').append(`<div class="search-topic">Events<div>`)
+    $('#event').append(`<div class="search-topic"><h1>Events</h1><div>`)
     $.get(`/api/events/${$('#location').val()}`)
     .then( function(data){
       console.log('events hit')
