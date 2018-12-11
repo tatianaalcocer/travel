@@ -3,7 +3,7 @@ let showMoreCount = 0;
 const getSiteList = function (e) {
     e.preventDefault();
     $('#sites').empty();
-    $('#sites').append(`<div class="search-topic">Sites<div>`)
+    $('#sites').append(`<div class="search-topic"><h1>Sites</h1><div>`)
     $.get(`api/sites/${$('#location').val()}`)
         .then(function (data) {
             console.log('sites hit')
