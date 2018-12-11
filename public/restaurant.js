@@ -1,4 +1,4 @@
-let showMoreCount = 0;
+// let showMoreCount = 0;
 const getRestaurantList = function(e){
     e.preventDefault();
     $('#restaurant').empty();
@@ -17,7 +17,7 @@ const getRestaurantList = function(e){
 
   const showMore = function(e){
     e.preventDefault();
-    showMoreCount++
+    // showMoreCount++
     $.get(`api/restaurant/${$('#location').val()}`)
     .then( function(data){
         for (let i = showMoreCount * 10 + 1; i < showMoreCount * 10 + 11; i++) {

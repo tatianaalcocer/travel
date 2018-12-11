@@ -1,4 +1,4 @@
-let showMoreCount = 0;
+// let showMoreCount = 0;
 const getEventList = function(e){
     e.preventDefault();
     $('#event').empty();
@@ -12,7 +12,7 @@ const getEventList = function(e){
 
 const showMoreEvents = function(e){
     e.preventDefault();
-    showMoreCount++;
+    // showMoreCount++;
     $.get(`/api/events/${$('#location').val()}`)
     .then( function(data){
       console.log(data);
