@@ -1,8 +1,259 @@
-.result-section {
+/*.result-section {
   border: 1px solid #333;
   margin: 10px;
   padding: 10px;
   width: 28%;
   display: block;
   float: left;
+}*/
+
+#bckground {
+  background: url('images/bckground.jpg');
+  background-color: #6668FF;
+  background-blend-mode: multiply;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -10;
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+  
+  color: white;
+  padding: 10px;
+  line-height: 1.5;
+}
+
+h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+h3 {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+header h1:before {
+  content: url('images/skyline.svg');
+  padding-right: 10px;
+}
+
+#landing{
+  color: #4F4F51;
+  background: white;
+  width: 80%;
+  height: 350px;
+  margin: 10vh auto;
+  padding: 5px 50px;
+  box-shadow: 1px 1px 5px #4F4F51;
+  box-sizing: border-box;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  font-size: .8em;
+  color: #A6A7C4;
+  z-index: -5;
+}
+
+#results{
+  width: 100%;
+  margin: 10vh auto;
+}
+
+#results::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.result-box{
+  background: white;
+  color: #4F4F51;
+  width: 25%; 
+  margin-left: 5%;
+  float: left;
+  padding: 5px 10px;
+}
+
+.result-box h2 {
+  text-align: center;
+}
+
+/*#results {
+  display: none;
+}*/
+/*------------------------
+    More Styles
+--------------------------*/
+
+#btn-showMore {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+/*------------------------
+    Box Styles
+--------------------------*/
+
+.box {
+  width: 25%;
+  background: #323393;
+  float: left;
+  margin-left: 6.25%;
+  position: relative;
+  top: 10px;
+  box-shadow: 1px 1px 5px #4F4F51;
+  padding: 20px 10px;
+  box-sizing: border-box;
+  color: white;
+  display: grid;
+  text-align: center;
+}
+
+.box h3 {
+  text-align: center;
+}
+
+.box img{
+  width: 50px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.box p {
+  font-size: .8em;
+  margin-top: 10px;
+}
+
+/*------------------------
+    Form Styles
+--------------------------*/
+
+.form-wrapper {
+	margin: 50px auto;
+	overflow: hidden;
+	padding: 8px;
+	width: 450px;
+}
+
+.form-wrapper #location{
+	border: 1px solid #CCC;
+	-webkit-box-shadow: 0 1px 1px #ddd inset, 0 1px 0 #FFF;
+	-moz-box-shadow: 0 1px 1px #ddd inset, 0 1px 0 #FFF;
+	box-shadow: 0 1px 1px #ddd inset, 0 1px 0 #FFF;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+  color: #999;
+	float: left;
+	font: 16px Lucida Sans, Trebuchet MS, Tahoma, sans-serif;
+	height: 20px;
+	padding: 10px;
+	width: 320px;
+}
+
+.form-wrapper #location:focus {
+	border-color: #aaa;
+	-webkit-box-shadow: 0 1px 1px #bbb inset;
+	-moz-box-shadow: 0 1px 1px #bbb inset;
+	box-shadow: 0 1px 1px #bbb inset;
+	outline: 0;
+}
+
+.form-wrapper #location:-moz-placeholder,
+.form-wrapper #location:-ms-input-placeholder,
+.form-wrapper #location::-webkit-input-placeholder {
+	color: #999;
+	font-weight: normal;
+}
+
+.form-wrapper #submit, .form-wrapper #btn-showMore {
+	background-color: #6668FF;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#6668FF), to(rgb(63, 65, 156)));
+	background-image: -webkit-linear-gradient(top, #6668FF, rgb(63, 65, 156));
+	background-image: -moz-linear-gradient(top, #6668FF, rgb(63, 65, 156));
+	background-image: -ms-linear-gradient(top, #6668FF, rgb(63, 65, 156));
+	background-image: -o-linear-gradient(top, #6668FF, rgb(63, 65, 156));
+	background-image: linear-gradient(top, #6668FF, rgb(63, 65, 156));
+	border: 1px solid rgb(63, 65, 156);
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	color: #fafafa;
+	cursor: pointer;
+	height: 42px;
+	float: right;
+	font: 15px Arial, Helvetica;
+	padding: 0;
+	text-transform: uppercase;
+	text-shadow: 0 1px 0 rgba(0, 0 ,0, .3);
+	width: 100px;
+}
+
+.form-wrapper #btn-showMore {
+	background-color: rgb(141, 143, 245);
+	background-image: -webkit-gradient(linear, left top, left bottom, from(rgb(141, 143, 245)), to(rgb(85, 86, 156)));
+	background-image: -webkit-linear-gradient(top, rgb(141, 143, 245),rgb(85, 86, 156));
+	background-image: -moz-linear-gradient(top, rgb(141, 143, 245), rgb(85, 86, 156));
+	background-image: -ms-linear-gradient(top, rgb(141, 143, 245), rgb(85, 86, 156));
+	background-image: -o-linear-gradient(top, rgb(141, 143, 245), rgb(85, 86, 156));
+	background-image: linear-gradient(top, rgb(141, 143, 245), rgb(85, 86, 156));
+  border: 1px solid rgb(63, 65, 156);
+}
+
+.form-wrapper #submit {
+  -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.3) inset, 0 1px 0 #FFF;
+	-moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.3) inset, 0 1px 0 #FFF;
+	box-shadow: 0 1px 0 rgba(255, 255, 255, 0.3) inset, 0 1px 0 #FFF;
+}
+
+.form-wrapper #submit:hover,
+.form-wrapper #submit:focus{
+	background-color: #6668FF;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(rgb(63, 65, 156)), to(#6668FF));
+	background-image: -webkit-linear-gradient(top, rgb(63, 65, 156), #6668FF);
+	background-image: -moz-linear-gradient(top, rgb(63, 65, 156), #6668FF);
+	background-image: -ms-linear-gradient(top, rgb(63, 65, 156), #6668FF);
+	background-image: -o-linear-gradient(top, rgb(63, 65, 156), #6668FF);
+	background-image: linear-gradient(top, rgb(63, 65, 156), #6668FF);
+}
+
+.form-wrapper #btn-showMore:hover,
+.form-wrapper #btn-showMore:focus {
+	background-color: rgb(141, 143, 245);
+	background-image: -webkit-gradient(linear, left top, left bottom, from(rgb(85, 86, 156)), to(rgb(141, 143, 245)));
+	background-image: -webkit-linear-gradient(top, rgb(85, 86, 156), rgb(141, 143, 245));
+	background-image: -moz-linear-gradient(top, rgb(85, 86, 156), rgb(141, 143, 245));
+	background-image: -ms-linear-gradient(top,rgb(85, 86, 156), rgb(141, 143, 245));
+	background-image: -o-linear-gradient(top, rgb(85, 86, 156), rgb(141, 143, 245));
+	background-image: linear-gradient(top, rgb(85, 86, 156), rgb(141, 143, 245));
+}
+
+.form-wrapper #submit:active,
+.form-wrapper #btn-showMore:active {
+	-webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5) inset;
+	-moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5) inset;
+	box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5) inset;
+	outline: 0;
+}
+
+.form-wrapper #submit::-moz-focus-inner,
+.form-wrapper #btn-showMore::-moz-focus-inner {
+	border: 0;
 }
