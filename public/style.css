@@ -20,6 +20,10 @@ a:visited {
   color: #4F4F51;
 }
 
+#landing-link {
+  color: white;
+  text-decoration: none;
+}
 
 body {
   box-sizing: border-box;
