@@ -10,7 +10,7 @@ The platform includes a wide variety of options - from finding out the destinati
 
 # Select Destination
 
-A comprehensive list of all the information one would need to know about a city like, restaurants, concerts or cultural activities or a list of best hangout sites there. This information is found thanks to the use of **TicketMaster**, **Yelp**, and **Google Places** developer APIs. Based on this information and the recommendation from CitySearch App, users can opt for the preferred destination location by using only the city of interest (*not zipcode, or state is allowed at this time*).
+A comprehensive list of all the information one would need to know about a city like, restaurants, concerts or cultural activities or a list of best hangout sites there. This information is found thanks to the use of **TicketMaster**, **Yelp**, and **Google Places** developer APIs. Based on this information and the recommendation from CitySearch App, users can opt for the preferred destination location by using only the city of interest (*Zipcode and state search are not supported at this time*).
 
 # Events
 
