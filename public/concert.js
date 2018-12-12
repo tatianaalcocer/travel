@@ -1,3 +1,4 @@
+let showMoreCount1 = 0
 const getEventList = function(e){
     e.preventDefault();
     $('#event').empty();
@@ -10,12 +11,12 @@ const getEventList = function(e){
   }
 
 const showMoreEvents = function(e){
-    console.log('show more events')
+    
     e.preventDefault();
-    // $('#event').empty();
+    showMoreCount1++
     $.get(`/api/events/${$('#location').val()}`)
     .then( function(data){
-      for (let i = 11; i < 20; i++){
+      for (let i = showMoreCount1 * 10 + 1; i < showMoreCount1 * 10 + 11; i++) {
         $('#event').append(`<div class="response"><a href='${data[i].url}'target='_blank'>${data[i].name}</a><div>`)
         }
       })
