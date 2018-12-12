@@ -40,4 +40,4 @@ The traveler is able to find out the museums, monuments, and more from **Google*
 
 # Deployment
 
-[I'm an inline-style](https://city-search-app.herokuapp.com/)
+[CitySearch App](https://city-search-app.herokuapp.com/)
