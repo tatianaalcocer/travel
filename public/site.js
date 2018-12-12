@@ -12,10 +12,6 @@ const getSiteList = function (e) {
                 $('#sites').append(`<div class="response">${data[i].name}<div>`)
                 $('#sites').append(`<div class="response-address">${data[i].formatted_address}<div>`)
             }
-            // if (data = false) {
-            //     const noResults = 'No results found';
-            //     noResults();
-            // }
         })
 }
 
