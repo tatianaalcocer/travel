@@ -1,5 +1,5 @@
 {
-  "name": "CitySearch App",
+  "name": "city-search-app",
   "version": "1.0.0",
   "description": "This is a test.",
   "main": "server.js",
