@@ -1,3 +1,13 @@
+/**
+ * @author Banesa Guaderrama
+ * Retrieve events data from TIcketMaster trough its developer API
+ */
+
+/**
+ * 
+ * @param {*} e prevents the default action of uploading data after 
+ * using the loop to load more data and take just ten items though the GET method
+ */
 const getEventList = function (e) {
   e.preventDefault();
   $('#event').empty();
@@ -12,6 +22,11 @@ const getEventList = function (e) {
     })
 }
 
+/**
+ * 
+ * @param {*} e prevents the default action of uploading data after 
+ * using the loop to load more data and take just the next ten items through the GET method
+ */
 const showMoreEvents = function (e) {
   e.preventDefault();
   console.log('show more events hit')
@@ -26,5 +41,11 @@ const showMoreEvents = function (e) {
     })
 }
 
+/**
+ * submit button enables the app to upload the requested data (first ten items)
+ */
 $('#submit').on('click', getEventList);
+/**
+ * btn-showmore enables the app to upload the requested data (next ten items)
+ */
 $('#btn-showMore').on('click', showMoreEvents);
