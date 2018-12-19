@@ -3,6 +3,13 @@
  * Retrieve events data from TIcketMaster trough its developer API
  */
 
+
+ /**
+ * Creates global variable in order to loop through additional results upon clicking 'More' button.
+ */
+let showMoreCount = 0;
+
+
 /**
  * 
  * @param {*} e prevents the default action of uploading data after 
@@ -15,7 +22,7 @@ const getEventList = function (e) {
   $.get(`/api/events/${$('#location').val()}`)
     .then(function (data) {
       console.log('events hit')
-      for (let i = 0; i <= 10; i++) {
+      for (let i = 0; i < 10; i++) {
         console.log('events loop hit')
         $('#event').append(`<div class="response"><a href='${data[i].url}'target='_blank'>${data[i].name}</a><div>`)
       }
@@ -29,12 +36,12 @@ const getEventList = function (e) {
  */
 const showMoreEvents = function (e) {
   e.preventDefault();
-  console.log('show more events hit')
+  showMoreCount++;
   $.get(`/api/events/${$('#location').val()}`)
     .then(function (data) {
-      console.log(data);
+      
       for (let i = showMoreCount * 10 + 1; i < showMoreCount * 10 + 11; i++) {
-        console.log('show more events loop hit')
+       
 
         $('#event').append(`<div class="response"><a href='${data[i].url}'target='_blank'>${data[i].name}</a><div>`)
       }
